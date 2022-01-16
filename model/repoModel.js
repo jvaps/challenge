@@ -1,12 +1,12 @@
-const axios = require("axios");
+const axios = require("axios")
 
 // Conexão com a API do Github
 const axiosConnect = () => {
   return axios({
     method: "get",
     url: `https://api.github.com/users/takenet/repos`,
-  });
-};
+  })
+}
 
 // JSON de retorno da API do Github
 const repoList = async () => {
@@ -21,8 +21,8 @@ const repoList = async () => {
       }
     }) 
   })
-};
+}
 
 module.exports = {
     repoList,
-};
+}
